@@ -13,30 +13,105 @@
 </nav>
 </header>
 
-<div class="navbar">
+<nav>
     <img src="./images/SMO_Logo_Preliminary.png" class="left" height="100">
     <a href="copyright.html" class="right">Copyright</a>
     <a href="quiz.html" class="right">Quiz</a>
     <a href="captures.html" class="right">Captures</a>
     <a href="/index.html" class="right">Home</a>
-  </div>
+</nav>
 
-    <div class="header">
+    <header>
         <h1><u>Welcome to the Quiz!</u></h1>
         <p>Do you dare challenge the Sphynx to a capture quiz? If you're ready, then go for it!</p>
         <img src="./images/SMOSphynxModel.png" class="right" height="400">
-      </div>
+    </header>
+      </body>
+
+      <body onload="NextQuestion(0)">
+      <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
 
 
-      <div class="row">
-        <div class="side">...</div>
-        <div class="main">...</div>
-      </div>
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
 
-      <div class="footer">
-        <h2>About Section</h2>
-        <p>My name is Joel Miller. I enjoy coding and playing video games such as <i>Super Mario Odyssey</i>.</p>
-      </div>
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
 
 </body>
 </html>
