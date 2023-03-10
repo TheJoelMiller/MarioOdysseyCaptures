@@ -132,6 +132,14 @@ footer {
   align-self: auto;
   }
 
+  .flex-item img {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+
 
 *{
   margin: 0;
