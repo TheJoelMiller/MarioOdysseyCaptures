@@ -107,6 +107,168 @@ const questions = [
         correctOption: "optionB"
     },
 
+    {
+        question: "What can Lakitu do in this game?",
+        optionA: "Record your progress",
+        optionB: "Throw Spinies",
+        optionC: "Time your races",
+        optionD: "Go fishing",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "What is the ONLY kingdom where Zippers can be found?",
+        optionA: "Lake Kingdom",
+        optionB: "Ruined Kingdom",
+        optionC: "Mushroom Kingdom",
+        optionD: "Lost Kingdom",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "How can you swim faster as a Cheep-Cheep?",
+        optionA: "Holding down the X Button",
+        optionB: "Shaking the Joy-Cons",
+        optionC: "Pressing A and Y together",
+        optionD: "Mashing the B button",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "What must be done before a Pirahna Plant can be captured?",
+        optionA: "Feed Cappy to it",
+        optionB: "Throw a rock in its mouth",
+        optionC: "Jump on its head",
+        optionD: "Stun it for a minute",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Uproot is needed to defeat which boss?",
+        optionA: "Mechawiggler",
+        optionB: "Knucklotec",
+        optionC: "Cookatiel",
+        optionD: "Torkdrit",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "What can Fire Bro's fireballs destroy?",
+        optionA: "Nuts",
+        optionB: "Trees",
+        optionC: "Boulders",
+        optionD: "Flowers",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Which of these can Sherm blow up?",
+        optionA: "The Odyssey",
+        optionB: "Buildings",
+        optionC: "Taxis",
+        optionD: "Lamposts",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "How many coins does Coin Coffer need to shoot at the plant in the Deep Woods?",
+        optionA: "600",
+        optionB: "500",
+        optionC: "400",
+        optionD: "300",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Tropical Wigglers sound like which musical instrument?",
+        optionA: "Banjo",
+        optionB: "Violin",
+        optionC: "Maracas",
+        optionD: "Accordion",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Where can Ty-Foos be found?",
+        optionA: "Snow Kingdom",
+        optionB: "Bowser's Kingdom",
+        optionC: "Metro Kingdom",
+        optionD: "Cloud Kingdom",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "What is another way Gushen can refill?",
+        optionA: "Defeat an enemy",
+        optionB: "Collect 100 coins",
+        optionC: "Collect a Power Moon",
+        optionD: "Touch the Odyssey",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "How can a Lava Bubble tavel on land?",
+        optionA: "Freeze it with ice",
+        optionB: "Swim in a Magmato",
+        optionC: "Land in a cannon",
+        optionD: "Cover it with lava",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "In the Luncheon Kingdom, Hammer Bros throw these:",
+        optionA: "Anvils",
+        optionB: "Rocks",
+        optionC: "Bombs",
+        optionD: "Frying Pans",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "How long does Pokio stick to a wall?",
+        optionA: "Forever",
+        optionB: "10 seconds",
+        optionC: "20 seconds",
+        optionD: "30 seconds",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "What can Jizo NOT do?",
+        optionA: "Weigh down switches",
+        optionB: "Become immune to spikes",
+        optionC: "Jump super high",
+        optionD: "Uncover hidden objects",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "How high can a Chargin' Chuck jump?",
+        optionA: "Super high",
+        optionB: "Kinda high",
+        optionC: "Not very high",
+        optionD: "They can't jump",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Unlike the other captures, Bowser can do this:",
+        optionA: "Dive",
+        optionB: "Triple Jump",
+        optionC: "Wall Jump",
+        optionD: "Side Flip",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "In order to get a Moon, Yoshi must eat this many berries:",
+        optionA: "10",
+        optionB: "15",
+        optionC: "20",
+        optionD: "25",
+        correctOption: "optionA"
+    },
+
 ]
 
 
