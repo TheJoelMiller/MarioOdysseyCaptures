@@ -198,7 +198,7 @@ const questions = [
     },
 
     {
-        question: "What is another way Gushen can refill?",
+        question: "What is another way Gushen can refill water?",
         optionA: "Defeat an enemy",
         optionB: "Collect 100 coins",
         optionC: "Collect a Power Moon",

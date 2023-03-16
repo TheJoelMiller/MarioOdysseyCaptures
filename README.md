@@ -1,1 +1,1 @@
-# MarioOdysseyCaptures
+This is a website that explains all of the captures in the video game Super Mario Odyssey
