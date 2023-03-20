@@ -32,7 +32,7 @@
     background-color: yellow;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 400px;
     min-width: 300px;
   }
   
@@ -42,13 +42,15 @@
     width: 100%;
   }
 
+  .card h2 {
+    padding: 20px;
+  }
+
 
   .accordion {
-    width: 800px;
-    margin: 90px auto;
     color: black;
     background-color: white;
-    padding: 45px 45px;
+    padding: 5px 20px;
   }
 
   .accordion .container {
@@ -86,7 +88,6 @@
   height: 0;
   font-size: 20px;
   text-align: justify;
-  width: 780px;
   overflow: hidden;
   transition: 0.5s;
 }
