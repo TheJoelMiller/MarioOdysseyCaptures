@@ -1,3 +1,8 @@
+const getCardHTML = (cardIndex) => {
+    return "<div>poop</div>";
+}
+
+
 const accordion = document.getElementsByClassName('container');
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
@@ -16,7 +21,8 @@ document.addEventListener('click', function (event) {
     // Log the clicked element in the console
     console.log(event.target.id);
     console.log(captureData[event.target.id].locations);
-    document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name ;
+    document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name;
+    document.getElementById("capture-card").innerHTML = "<div>poop</div>";
     
     }, false);
 
