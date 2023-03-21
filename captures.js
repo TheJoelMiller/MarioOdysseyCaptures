@@ -1,14 +1,31 @@
 const getCardHTML = (cardIndex) => {
-    return "<div>poop</div>";
+    return `<div id="capture-card" class="card">
+    <h2>#${parseInt(cardIndex) + 1}: ${captureData[cardIndex].name}</h2>
+    <img src="${captureData[cardIndex].image}"> 
+    <div class="accordion-body">
+      <div class="accordion">
+        <h1>Capture Information</h1>
+        <hr>
+        <div class="container">
+          <div class="label">Controls</div>
+          <div class="content">${captureData[cardIndex].controls}</div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="label">Locations</div>
+          <div class="content">${captureData[cardIndex].locations}</div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="label">Fun Facts</div>
+          <div class="content">${captureData[cardIndex].funFacts}</div>
+        </div>
+        <hr>
+      </div>
+    </div>       
+  </div>`;
 }
 
-
-const accordion = document.getElementsByClassName('container');
-for (i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
-  })
-}
 
 document.addEventListener('click', function (event) {
 
@@ -19,21 +36,27 @@ document.addEventListener('click', function (event) {
     event.preventDefault();
     
     // Log the clicked element in the console
-    console.log(event.target.id);
-    console.log(captureData[event.target.id].locations);
-    document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name;
-    document.getElementById("capture-card").innerHTML = "<div>poop</div>";
+    // console.log(event.target.id);
+    // console.log(captureData[event.target.id].locations);
+    // document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name;
+    document.getElementById("capture-card").innerHTML = getCardHTML(event.target.id);
     
     }, false);
 
 const captureData = [
     {
         name: 'Frog', 
+        image: './images/SMO_Frog_Capture.png',
         locations: 'Cap Kingdom, Lake Kingdom, Moon Kingdom, Darker Side',
+        controls: 'Placeholder 1',
+        funFacts: 'On the moon, this capture has the highest jump.',
     },
     {
         name: 'Spark Pylon', 
+        image: './images/SMO_Spark_pylon_Capture.png',
         locations: 'Cap Kingdom, Cascade Kingdom, Sand Kingdom, Metro Kingdom, Ruined Kingdom, Bowsers Kingdom, Moon Kingdom, Dark Side, Darker Side',
+        controls: 'Placeholder 2',
+        funFacts: 'TBD',
     },
     {
         name: 'Paragoomba', 
@@ -236,3 +259,10 @@ const captureData = [
         locations: 'Mushroom Kingdom, Dark Side, Darker Side',
     },
     ]
+
+    const accordion = document.getElementsByClassName('container');
+    for (i=0; i<accordion.length; i++) {
+      accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+      })
+    }
