@@ -26,6 +26,14 @@ const getCardHTML = (cardIndex) => {
   </div>`;
 }
 
+const setupAccordions = () => {
+    const accordion = document.getElementsByClassName('container');
+    for (i=0; i<accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    })
+    }
+}
 
 document.addEventListener('click', function (event) {
 
@@ -40,6 +48,7 @@ document.addEventListener('click', function (event) {
     // console.log(captureData[event.target.id].locations);
     // document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name;
     document.getElementById("capture-card").innerHTML = getCardHTML(event.target.id);
+    setupAccordions();
     
     }, false);
 
@@ -91,7 +100,7 @@ const captureData = [
         image: './images/SMO_T-Rex_Capture.png',
         controls: 'Left Stick + Y Button = Dash, B Button / Shake = Attack',
         locations: 'Cascade Kingdom, Wooded Kingdom, Metro Kingdom',
-        funFacts: 'This is the largest capture in the game',
+        funFacts: 'This is the largest capture in the game.',
     },
     {
         name: 'Binoculars', 
@@ -410,9 +419,4 @@ const captureData = [
     },
     ]
 
-    const accordion = document.getElementsByClassName('container');
-    for (i=0; i<accordion.length; i++) {
-      accordion[i].addEventListener('click', function () {
-        this.classList.toggle('active')
-      })
-    }
+setupAccordions();

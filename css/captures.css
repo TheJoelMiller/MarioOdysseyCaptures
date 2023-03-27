@@ -90,7 +90,8 @@
   font-size: 20px;
   text-align: center;
   overflow: hidden;
-  transition: 0.5s;
+  transition: max-height 0.15s ease-out;
+  max-height: 0;
 }
 
 /* Adds a horizontal line between the contents */
@@ -104,7 +105,9 @@
 /* Unhides the content part when active. Sets the height */
 
 .accordion .container.active .content {
-  height: 150px;
+  height: auto;
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
 }
 
 /* Changes from plus sign to negative sign once active */
