@@ -1,6 +1,7 @@
 const getCardHTML = (cardIndex) => {
-    return `<div id="capture-card" class="card">
+    return `
     <h2>#${parseInt(cardIndex) + 1}: ${captureData[cardIndex].name}</h2>
+    <input type="hidden" id="capture-id" name="capture-id" value="${cardIndex}"/>
     <img src="${captureData[cardIndex].image}"> 
     <div class="accordion-body">
       <div class="accordion">
@@ -22,8 +23,27 @@ const getCardHTML = (cardIndex) => {
         </div>
         <hr>
       </div>
-    </div>       
-  </div>`;
+    </div>`;
+}
+
+const clickNext = () => {
+    const captureId = document.getElementById("capture-id").value;
+    let newCaptureId = parseInt (captureId) + 1;
+    if (newCaptureId > 51) {
+        newCaptureId = 0;
+    }
+    document.getElementById("capture-card").innerHTML = getCardHTML(newCaptureId);
+    setupAccordions();
+}
+
+const clickPrev = () => {
+    const captureId = document.getElementById("capture-id").value;
+    let newCaptureId = parseInt (captureId) - 1;
+    if (newCaptureId < 0) {
+        newCaptureId = 51;
+    }
+    document.getElementById("capture-card").innerHTML = getCardHTML(newCaptureId);
+    setupAccordions();
 }
 
 const setupAccordions = () => {
@@ -43,10 +63,6 @@ document.addEventListener('click', function (event) {
     // Don't follow the link
     event.preventDefault();
     
-    // Log the clicked element in the console
-    // console.log(event.target.id);
-    // console.log(captureData[event.target.id].locations);
-    // document.getElementById("capture-info").innerHTML =  captureData[event.target.id].name;
     document.getElementById("capture-card").innerHTML = getCardHTML(event.target.id);
     setupAccordions();
     
@@ -93,7 +109,7 @@ const captureData = [
         image: './images/SMO_Broode\'s_Chain_Chomp_Capture.png',
         controls: 'Pull Left Stick = Wind Up, Release Left Stick = Send Flying',
         locations: 'Cascade Kingdom, Moon Kingdom',
-        funFacts: 'Madame Broode\'s Chain Chomp has a name: Chain Chompikins',
+        funFacts: 'Madame Broode\'s Chain Chomp has a name: Chain Chompikins.',
     },
     {
         name: 'T-Rex', 
@@ -114,7 +130,7 @@ const captureData = [
         image: './images/SMO_Bullet_Bill_Capture.png',
         controls: 'Hold Y Button: Accelerate, Shake: Accelerate More',
         locations: 'Sand Kingdom, Wooded Kingdom, Metro Kingdom, Moon Kingdom, Dark Side',
-        funFacts: 'Bullet Bills can only be used temperally before they explode.',
+        funFacts: 'Bullet Bills can only be used temporarily before they explode.',
     },
     {
         name: 'Moe-Eye', 
@@ -212,7 +228,7 @@ const captureData = [
         image: './images/SMO_Sherm_Capture.png',
         controls: 'Right Stick: Aim, Y Button: Shoot',
         locations: 'Mushroom Kingdom, Wooded Kingdom, Metro Kingdom, Moon Kingdom, Dark Side',
-        funFacts: 'Sherms can destroy Taxis in the Metro Kingdom',
+        funFacts: 'Sherms can destroy Taxis in the Metro Kingdom.',
     },
     {
         name: 'Coin Coffer', 
@@ -294,7 +310,7 @@ const captureData = [
     {
         name: 'Cheep Cheep (Snow Kingdom)', 
         image: './images/SMO_Cheep_Cheep_(Snow_Kingdom)_Capture.png',
-        controls: 'Y Button: Dive, B Button: Surface, Shake: Attack, Y Button + B Button: Swim Faster',
+        controls: 'Y Button: Dive, B Button: Surface, Shake: Attack',
         locations: 'Snow Kingdom',
         funFacts: 'It\'s exactly the same as a normal Cheep Cheep, except for the color.',
     },

@@ -30,32 +30,41 @@
     </header>
 
     <main class="capture-main">
-      <div id="capture-card" class="card">
-        <h2>#1: Frog</h2>
-        <img src="./images/SMO_Frog_Capture.png"> 
-        <div class="accordion-body">
-          <div class="accordion">
-            <h1>Capture Information</h1>
-            <hr>
-            <div class="container">
-              <div class="label">Controls</div>
-              <div class="content">Left Stick = Move, B Button = Jump, Shake = High Jump</div>
+      <div class="capture-wrapper">
+        <div class="capture-button">
+          <button onclick="clickPrev();"><</button>
+        </div>
+        <div id="capture-card" class="card">
+          <h2>#1: Frog</h2>
+          <input type="hidden" id="capture-id" name="capture-id" value="0"/>
+          <img src="./images/SMO_Frog_Capture.png"> 
+          <div class="accordion-body">
+            <div class="accordion">
+              <h1>Capture Information</h1>
+              <hr>
+              <div class="container">
+                <div class="label">Controls</div>
+                <div class="content">Left Stick = Move, B Button = Jump, Shake = High Jump</div>
+              </div>
+              <hr>
+              <div class="container">
+                <div class="label">Locations</div>
+                <div class="content">Cap Kingdom, Lake Kingdom, Moon Kingdom, Darker Side</div>
+              </div>
+              <hr>
+              <div class="container">
+                <div class="label">Fun Facts</div>
+                <div class="content">On the moon, this capture has the highest jump.</div>
+              </div>
+              <hr>
             </div>
-            <hr>
-            <div class="container">
-              <div class="label">Locations</div>
-              <div class="content">Cap Kingdom, Lake Kingdom, Moon Kingdom, Darker Side</div>
-            </div>
-            <hr>
-            <div class="container">
-              <div class="label">Fun Facts</div>
-              <div class="content">On the moon, this capture has the highest jump.</div>
-            </div>
-            <hr>
           </div>
-        </div>       
+        </div>      
+        <div class="capture-button">
+          <button onclick="clickNext();">></button>
+        </div>
       </div>
-      <div id="capture-info">
+    <div id="capture-info">
         <p></p>
       </div>
       <div class="cards">
