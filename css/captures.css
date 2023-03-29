@@ -1,8 +1,9 @@
   .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     flex-direction: row;
+    align-items: stretch; 
+    justify-content: space-between;
   }
   .cards img {
     margin: 10px;

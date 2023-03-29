@@ -2,7 +2,7 @@ const getCardHTML = (cardIndex) => {
     return `
     <h2>#${parseInt(cardIndex) + 1}: ${captureData[cardIndex].name}</h2>
     <input type="hidden" id="capture-id" name="capture-id" value="${cardIndex}"/>
-    <img src="${captureData[cardIndex].image}"> 
+    <img src="${captureData[cardIndex].image}" alt="${captureData[cardIndex].name} Capture"> 
     <div class="accordion-body">
       <div class="accordion">
         <h1>Capture Information</h1>
@@ -360,7 +360,7 @@ const captureData = [
         name: 'Pokio', 
         image: './images/SMO_Pokio_Capture.png',
         controls: 'Y Button: Poke, B Button: Jump',
-        locations: 'Seaside Kingdom, Bowser\'s Kingdom',
+        locations: 'Seaside Kingdom, Bowser\'s Kingdom, Darker Side',
         funFacts: 'As long as you stick to a wall, Pokio will stay on that wall forever until you let go.',
     },
     {

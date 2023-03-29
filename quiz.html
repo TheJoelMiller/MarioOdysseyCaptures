@@ -3,18 +3,19 @@
 <head>
 <title>The Mario Odyssey Capture Website</title>
 <link href="css/common.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="css/quiz.css" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body onload="NextQuestion(0)">
 
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><img src="./images/SMO_Logo_Preliminary.png" height="75"></label>
+        <label class="logo"><img src="./images/SMO_Logo_Preliminary.png" alt="Super Mario Odyssey Logo" height="75"></label>
         <ul>
           <li><a href="index.html" class="right">Home</a></li>
           <li><a href="captures.html" class="right">Captures</a></li>
@@ -26,12 +27,9 @@
     <header>
         <h1><u>Welcome to the Quiz!</u></h1>
         <p>Do you dare challenge the Sphynx to a capture quiz? If you're ready, then go for it!</p>
-        <img src="./images/SMOSphynxModel.png" class="right" height="400">
+        <img src="./images/SMOSphynxModel.png" alt="Sphynx Character" class="right" height="400">
     </header>
-      </body>
 
-      <link href="css/quiz.css" rel="stylesheet">
-      <body onload="NextQuestion(0)">
       <main>
         <!-- creating a modal for when quiz ends -->
         <div class="modal-container" id="score-modal">
@@ -64,7 +62,9 @@
             </div>
 
             <div class="game-question-container">
-                <h1 id="display-question"></h1>
+                <h1 id="display-question">
+                    Sample Question
+                </h1>
             </div>
 
             <div class="game-options-container">
@@ -83,25 +83,25 @@
                </div>
 
                 <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA">
                     <label for="option-one" class="option" id="option-one-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB">
                     <label for="option-two" class="option" id="option-two-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC">
                     <label for="option-three" class="option" id="option-three-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD">
                     <label for="option-four" class="option" id="option-four-label"></label>
                 </span>
 
