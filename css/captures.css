@@ -96,7 +96,7 @@
 /* Adds a horizontal line between the contents */
 
 .accordion hr {
-  width: 100;
+  width: 100px;
   margin-left: 0;
   border: 1px solid grey;
 }
