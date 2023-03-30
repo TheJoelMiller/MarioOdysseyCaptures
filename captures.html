@@ -4,25 +4,29 @@
   <title>Captures</title>
   <link href="css/common.css" rel="stylesheet">
   <link href="css/captures.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
+  <nav class="top-nav">
+    <label class="logo">
+        <img src="./images/SMO_Logo.webp" alt="Super Mario Odyssey Logo">
     </label>
-    <label class="logo"><img src="./images/SMO_Logo.webp" alt="Super Mario Odyssey Logo"></label>
-    <ul>
-      <li><a href="index.html" class="right">Home</a></li>
-      <li><a href="captures.html" class="right">Captures</a></li>
-      <li><a href="quiz.html" class="right">Quiz</a></li>
-      <li><a href="copyright.html" class="right">Copyright</a></li>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="captures.html">Captures</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="copyright.html">Copyright</a></li>
     </ul>
   </nav>
+  
 
     <header>
         <h1><u>Welcome to the Captures Page!</u></h1>
