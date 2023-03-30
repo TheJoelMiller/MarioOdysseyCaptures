@@ -393,15 +393,15 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
+        remark = "Keep studying your captures."
         remarkColor = "red"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
+        remark = "Not bad. You know your captures pretty well..."
         remarkColor = "orange"
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
+        remark = "Excellent work! You know your captures!"
         remarkColor = "green"
     }
     const playerGrade = (playerScore / 10) * 100
